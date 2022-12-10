@@ -29,8 +29,8 @@ app.get('/', function (req, res) {
 
 db.selectAll('select count(*) as sum from message', (e, r) => {
     //id 按照消息发送的先后顺序递增
-    console.log('数据库共有' + r[0].sum + '条历史消息记录')
-    id_now = r[0].sum + 1
+    console.log('数据库共有' + r.sum + '条历史消息记录')
+    id_now = r.sum + 1
 })
 
 //一进入聊天室就加载信息 传个socket对象
