@@ -4,7 +4,7 @@
 /*
     1.连接socket io服务
 */
-var socket = io('http://localhost:3000')
+var socket = io('LOLRCSH.github.io:3000')
 var username, avatar, password, sex
 /*
     2.登录功能
